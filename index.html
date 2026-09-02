@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f0d0b" />
+  <title>JAWA Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> -->
+   <link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div class="hero__overlay"></div>
+    </section>
+
+    <div class="hero-menu-gap" aria-hidden="true"></div>
+
+    <section class="menu-section" id="menu">
+      <header class="menu-heading">
+        <h1>OUR MENU</h1>
+        <span>Choose a category to quickly find what you want.</span>
+        <div class="menu-heading__ornament" aria-hidden="true">
+          <span></span><img src="assets/coffee-bean-svgrepo-com.svg" alt="" /><span></span>
+        </div>
+      </header>
+
+      <div class="filters-wrap" id="filtersWrap">
+        <nav class="filters" id="filters" aria-label="Menu categories"></nav>
+      </div>
+
+      <div id="menuContent" class="menu-content" aria-live="polite"></div>
+    </section>
+
+  <footer class="footer" id="social">
+        <p>Our socials </p>
+        <div class="socials" aria-label="Social media links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="TikTok">♪</a>
+        </div>
+        <p>All prices are in EGB and include VAT.</p>
+        <small class="logo-footer">© <span id="year"></span> JAWA Coffee</small>
+      </footer>
+    </main>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
