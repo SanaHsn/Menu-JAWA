@@ -224,7 +224,7 @@ textarea {
 .filter-btn {
   flex: 0 0 auto;
   scroll-snap-align: start;
-  border: 1px solid rgba(243, 231, 215, .2);
+  border: 1px solid rgba(243, 231, 215, 0.2);
   background: transparent;
   color: var(--cream);
   padding: 13px 17px;
@@ -233,8 +233,8 @@ textarea {
   text-transform: uppercase;
   font-size: clamp(12px, 1vw, 14px);
   font-weight: 600;
-  letter-spacing: .025em;
-  transition: .2s ease;
+  letter-spacing: 0.025em;
+  transition: 0.2s ease;
 }
 
 .filter-btn:hover {
@@ -334,7 +334,7 @@ textarea {
 
 .item-price small {
   color: var(--cream);
-  font-size: clamp(10px, .8vw, 12px);
+  font-size: clamp(10px, 0.8vw, 12px);
   font-weight: 500;
   margin-left: 3px;
 }
@@ -397,8 +397,15 @@ textarea {
 
 @media (max-width: 560px) {
   .hero {
-    min-height: 540px;
-    background-position: center top;
+    min-height: 0;
+    height: 115vw;
+    max-height: 500px;
+
+    background:
+      linear-gradient(to bottom, rgba(8, 7, 5, 0.2), rgba(8, 7, 5, 0.2)),
+      url("assets/hero-flat-white.jpg") center top / contain no-repeat;
+
+    background-color: #040404;
   }
 
   .hero__copy {
@@ -406,7 +413,7 @@ textarea {
   }
 
   .hero-menu-gap {
-    height: 34px;
+    height: 15px;
   }
 
   .menu-content {
@@ -425,10 +432,9 @@ textarea {
   .menu-item {
     gap: 10px;
   }
-   .filters {
+  .filters {
     justify-content: flex-start;
   }
-
 }
 
 @media (max-width: 390px) {
