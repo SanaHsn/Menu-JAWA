@@ -398,12 +398,13 @@ textarea {
 @media (max-width: 560px) {
   .hero {
     min-height: 0;
-    height: 115vw;
-    max-height: 500px;
+
+    height: 105vw;
+    max-height: 470px;
 
     background:
       linear-gradient(to bottom, rgba(8, 7, 5, 0.2), rgba(8, 7, 5, 0.2)),
-      url("assets/hero-flat-white.jpg") center top / contain no-repeat;
+      url("assets/hero-flat-white.jpg") center center / contain no-repeat;
 
     background-color: #040404;
   }
