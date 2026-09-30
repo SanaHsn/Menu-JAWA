@@ -52,7 +52,7 @@ const categories = [
       { name: "Cookie", price: 55 },
       { name: "Brownie", price: 70 }
     ]
-  },
+  }
   // {
   //   id: "new",
   //   label: "New",
