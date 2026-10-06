@@ -395,12 +395,49 @@ textarea {
   color: var(--caramel);
 }
 
+/* Language Selector */
+
+/* .language-switcher {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 100;
+}
+
+.language-btn {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  color: var(--cream);
+  cursor: pointer;
+}
+
+.language-btn svg {
+  width: 34px;
+  height: 34px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+} */
+
+/* Responsive adjustments for smaller screens */
+
 @media (max-width: 560px) {
   .hero {
     min-height: 0;
-
-    height: 105vw;
-    max-height: 470px;
+    height: 100vw;
+    max-height: 455px;
 
     background:
       linear-gradient(to bottom, rgba(8, 7, 5, 0.2), rgba(8, 7, 5, 0.2)),
@@ -414,7 +451,7 @@ textarea {
   }
 
   .hero-menu-gap {
-    height: 15px;
+    height: 20px;
   }
 
   .menu-content {
