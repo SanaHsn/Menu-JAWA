@@ -4,15 +4,16 @@ const categories = [
     label: "Coffee",
     title: "Coffee Classics",
     items: [
-      { name: "Espresso", price: 50 },
-      { name: "Americano", price: 65 },
-      { name: "Cortado", price: 75 },
-      { name: "Cappuccino", price: 80 },
-      { name: "Latte", price: 80 },
-      { name: "Flat White", price: 85 },
-      { name: "Mocha", price: 85 },
-      { name: "Spanish Latte", price: 90 },
-      { name: "Caramel Macchiato", price: 90 },
+      { name: "Turkish Coffee", price: 40 },
+      { name: "Espresso", price: 50 / 75 },
+      { name: "Americano", price: 85 },
+      { name: "Cortado", price: 95 },
+      { name: "Cappuccino", price: 100 },
+      { name: "Latte", price: 100 },
+      { name: "Flat White", price: 110 },
+      { name: "Mocha", price: 125 },
+      { name: "Spanish Latte", price: 120 },
+      { name: "Caramel Macchiato", price: 135 },
     ],
   },
   {
@@ -21,11 +22,42 @@ const categories = [
     title: "Iced Coffee",
     items: [
       { name: "Iced Americano", price: 100 },
-      { name: "Iced Latte", price: 125 },
-      { name: "Iced Spanish Latte", price: 125 },
-      { name: "Iced Matcha", price: 125 },
-      { name: "Coconut Iced Latte", price: 145 },
-      { name: "Honey Black V60", price: 170 },
+      { name: "Iced Latte", price: 110 },
+      { name: "Iced Spanish Latte", price: 120 },
+      { name: "Coconut Iced Latte", price: 140 },
+      { name: "V60", price: 170 },
+    ],
+  },
+  {
+    id: "matcha",
+    label: "Matcha",
+    title: "Matcha Drinks",
+    items: [
+      {
+        name: "Hot Matcha",
+        description: "Matcha, steamed milk",
+        price: 90,
+      },
+      { name: "Iced Matcha", price: 110 },
+      {
+        name: "Matcha Latte",
+        description: "Matcha, steamed milk",
+        price: 90,
+      },
+
+    ],
+  },
+  {
+    id: "frappuccino",
+    label: "Frappuccino",
+    title: "Frappuccino",
+    items: [
+      {
+        name: "Frappuccino",
+        description:
+          "Flavors: Vanilla · Caramel · Mocha · Matcha · Salted Caramel · White Mocha",
+        price: 150,
+      },
     ],
   },
   {
@@ -38,26 +70,6 @@ const categories = [
         description: "Biscoff, espresso, steamed milk, caramel",
         price: 150,
       },
-      {
-        name: "Oreo Latte",
-        description: "Oreo, espresso, steamed milk ",
-        price: 160,
-      },
-      {
-        name: "Pistachio Coffee",
-        description: "Espresso, pistachio, white chocolate, steamed milk",
-        price: 180,
-      },
-      {
-        name: "Honey Cinnamon Latte",
-        description: "Espresso, cinnamon, steamed milk, honey",
-        price: 180,
-      },
-      {
-        name: "Tiramisu Latte",
-        description: "Espresso,mascarpone, steamed milk, cocoa",
-        price: 180,
-      },
     ],
   },
   {
@@ -68,65 +80,130 @@ const categories = [
       {
         name: "Moroccan Tea",
         description: "Green tea, fresh mint",
-        price: 70,
+        price: 50,
       },
       {
         name: "Hot Chocolate",
         description: "Chocolate, steamed milk",
-        price: 70,
-      },
-      {
-        name: "Matcha Latte",
-        description: "Matcha, steamed milk",
-        price: 85,
+        price: 90,
       },
       {
         name: "Creamy Chocolate",
         description: "Chocolate, milk, cream",
-        price: 85,
+        price: 100,
       },
     ],
   },
-  {
-    id: "desserts",
-    label: "Desserts",
-    title: "Desserts",
-    items: [
-      { name: "Waffle", price: 80 },
-      { name: "Brownie", price: 90 },
-    ],
-  },
+  // {
+  //   id: "desserts",
+  //   label: "Desserts",
+  //   title: "Desserts",
+  //   items: [
+  //     { name: "Waffle", price: 80 },
+  //     { name: "Brownie", price: 90 },
+  //   ],
+  // },
   {
     id: "cookies",
     label: "Cookies",
     title: "Cookies",
     items: [
-      { name: "Dark Chocolate Cookie", price: 60 },
-      { name: "Kinder Bueno Cookie", price: 90 },
-      { name: "Brownie Cookie", price: 110 },
-      { name: "Lotus Cookie", price: 110 },
-      { name: "Pistachio Cookie", price: 120 },
+      { name: "Dark or White Chocolate Cookie", price: 100 },
+      { name: "Kinder Bueno Cookie", price: 130 },
+      // { name: "Brownie Cookie", price: 110 },
+      { name: "Lotus Cookie", price: 130 },
+      { name: "Pistachio Cookie", price: 130 },
     ],
   },
 
-  // {
-  //   id: "new",
-  //   label: "New",
-  //   title: "New",
-  //   items: [
-  //     { name: "Seasonal Drink", description: "Example product — replace later", price: 85 }
-  //   ]
-  // },
-  // {
-  //   id: "sandwich",
-  //   label: "Sandwich",
-  //   title: "Sandwiches",
-  //   temporaryImage: true,
-  //   items: [
-  //     { name: "Turkey & Cheese", price: 120 },
-  //     { name: "Chicken Pesto", price: 135 }
-  //   ]
-  // }
+  {
+    id: "sandwich",
+    label: "Toasts",
+    title: "Open Toasts",
+    temporaryImage: true,
+    items: [
+      // {
+      //   name: "Smoked Cheese Toast",
+      //   description: "Mozzarella, cheddar, smoked Roumy cheese, oregano.",
+      //   price: 110,
+      // },
+      {
+        name: "Tuna Toast",
+        description: "Tuna, sweet corn, mayonnaise, parsley, dill, lemon.",
+        price: 170,
+      },
+      {
+        name: "Pastrami Toast",
+        description: "Pastrami, cheddar, pickles, sour cream.",
+        price: 330,
+      },
+      {
+        name: "Smoked Salmon Toast",
+        description: "Smoked salmon, cream cheese, avocado, dill.",
+        price: 280,
+      },
+
+      {
+        name: "Egg & Cheese Toast",
+        description: "Egg, cheddar cheese, mozzarella, black pepper.",
+        price: 165,
+      },
+
+      {
+        name: "Extra Egg",
+        description: "Add an egg to any toast.",
+        price: 20,
+      },
+    ],
+  },
+  {
+    id: "savory-waffles",
+    label: "Savory Waffles",
+    title: "Savory Waffles",
+    temporaryImage: true,
+    items: [
+      {
+        name: "Cheese Waffle",
+        description: "Egg, cheddar cheese, mozzarella, black pepper.",
+        price: 220,
+      },
+      {
+        name: "Tuna Waffle",
+        description: "Tuna, sweet corn, mayonnaise, parsley, dill, lemon.",
+        price: 235,
+      },
+      {
+        name: "Pastrami Waffle",
+        description: "Pastrami, cheddar, pickles, sour cream.",
+        price: 380,
+      },
+      {
+        name: "Smoked Salmon Waffle",
+        description: "Smoked salmon, cream cheese, avocado, dill.",
+        price: 350,
+      },
+    ],
+  },
+  {
+    id: "sweet-waffles",
+    label: "Sweet Waffles",
+    title: "Sweet Waffles",
+    temporaryImage: true,
+    items: [
+      { name: "Plain Waffle", description: "Served with powdered sugar.", price: 70 },
+      {
+        name: "Waffle with Sauce",
+        description:
+          "Choice your flavor: Dark Chocolate, White Chocolate, Pistachio or Caramel.",
+        price: 110,
+      },
+      {
+        name: "Kunafa Pistachio Waffle",
+        description: "Kunafa, pistachio cream, crushed pistachios.",
+        price: 270,
+      },
+    ],
+  },
 ];
 
 const filtersEl = document.querySelector("#filters");
