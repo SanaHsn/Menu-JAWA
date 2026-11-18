@@ -5,7 +5,7 @@ const categories = [
     title: "Coffee Classics",
     items: [
       { name: "Turkish Coffee", price: 40 },
-      { name: "Espresso", price: "50 / 75" },
+      { name: "Espresso", price: "50" },
       { name: "Americano", price: 85 },
       { name: "Cortado", price: 95 },
       { name: "Cappuccino", price: 100 },
