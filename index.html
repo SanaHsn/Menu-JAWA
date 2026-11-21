@@ -1,95 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0f0d0b" />
-    <title>JAWA Menu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="app-shell">
-      <!-- Language selector -->
-<!-- 
-      <div class="language-switcher">
-        <button
-          class="language-btn"
-          id="languageBtn"
-          type="button"
-          aria-label="Change language"
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="9"></circle>
-            <path d="M3 12h18"></path>
-            <path d="M12 3c3 3.5 3 14.5 0 18"></path>
-            <path d="M12 3c-3 3.5-3 14.5 0 18"></path>
-          </svg>
-        </button>
-
-        <div id="google_translate_element"></div>
-      </div> -->
-      <section class="hero">
-        <div class="hero__overlay"></div>
-      </section>
-
-      <div class="hero-menu-gap" aria-hidden="true"></div>
-
-      <section class="menu-section" id="menu">
-        <header class="menu-heading">
-          <h1>OUR MENU</h1>
-          <span class="menu-heading__subtitle"
-            >Choose a category to quickly find what you want.</span
-          >
-
-          <div class="menu-heading__ornament" aria-hidden="true">
-            <span></span
-            ><img
-              src="assets/coffee-bean-svgrepo-com.svg"
-              alt=""
-            /><span></span>
-          </div>
-        </header>
-
-        <div class="filters-wrap" id="filtersWrap">
-          <nav class="filters" id="filters" aria-label="Menu categories"></nav>
-        </div>
-
-        <div id="menuContent" class="menu-content" aria-live="polite"></div>
-      </section>
-
-      <footer class="footer" id="social">
-        <p>Our socials</p>
-        <div class="socials" aria-label="Social media links">
-          <a
-            href="https://www.instagram.com/jawa.coffeeshop/"
-            aria-label="Instagram"
-            >IG</a
-          >
-          <a
-            href="https://www.tiktok.com/@jawa.coffeeshop?lang=fr"
-            aria-label="TikTok"
-            >♪</a
-          >
-          <a
-            href="https://www.facebook.com/jawa.coffeeshop"
-            aria-label="Facebook"
-            >f</a
-          >
-        </div>
-        <p>All prices are in EGP and include VAT.</p>
-        <small class="logo-footer">© <span id="year"></span> JAWA Coffee</small>
-      </footer>
-    </main>
-
-    <script src="script.js"></script>
-
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#241710" />
+  <meta name="description" content="JAWA Coffee Shop — Good Coffee, Good Mood, Good Day. Explore our menu and find us online." />
+  <title>JAWA Coffee | All our links</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero" aria-label="JAWA Coffee Shop">
+      <img src="images/hero-jawa.webp" alt="JAWA coffee shop atmosphere with a latte and cookies" />
+    </header>
+    <section class="content" aria-label="JAWA links">
+      <p class="slogan">Good Coffee <span>•</span> Good Mood <span>•</span> Good Day</p>
+      <div class="divider" aria-hidden="true"><span></span><span class="bean">◒</span><span></span></div>
+      <nav class="links" aria-label="Our pages">
+        <a class="link" href="menu/" aria-label="Explore our menu"><span class="symbol">▤</span><span class="name">Our Menu</span><span class="arrow">›</span></a>
+        <a class="link" href="https://www.instagram.com/jawa.coffeeshop/" target="_blank" rel="noopener noreferrer"><span class="symbol">◎</span><span class="name">Instagram</span><span class="arrow">›</span></a>
+        <!-- Remplacer # par l'URL exacte de votre page Facebook -->
+        <a class="link pending" href="https://www.facebook.com/profile.php?id=61596835888724" data-pending="Facebook"><span class="symbol social">f</span><span class="name">Facebook</span><span class="arrow">›</span></a>
+        <!-- Remplacer # par l'URL exacte de votre compte TikTok -->
+        <a class="link pending" href="https://www.tiktok.com/@jawa.coffeeshop" data-pending="TikTok"><span class="symbol">♪</span><span class="name">TikTok</span><span class="arrow">›</span></a>
+        <!-- Remplacer # par le lien de localisation Google Maps de JAWA -->
+        <a class="link pending" href="https://maps.app.goo.gl/VF5VwrY6GmMSYRZM9?g_st=ic" data-pending="Google Maps"><span class="symbol">⌖</span><span class="name">Find Us on Google Maps</span><span class="arrow">›</span></a>
+        <a class="link" href="https://g.page/r/CRwukpi9iPAXECE/review" target="_blank" rel="noopener noreferrer"><span class="symbol">☆</span><span class="name">Leave a Review</span><span class="arrow">›</span></a>
+      </nav>
+      <p class="footer">JAWA COFFEE · HURGHADA</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>
