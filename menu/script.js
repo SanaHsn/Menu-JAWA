@@ -13,7 +13,7 @@ const categories = [
       { name: "Flat White", price: 110 },
       { name: "Mocha", price: 125 },
       { name: "Spanish Latte", price: 120 },
-      { name: "Caramel Macchiato", price: 135 },
+      { name: "Caramel Macchiato", price: 110 },
     ],
   },
   {
@@ -109,10 +109,10 @@ const categories = [
     title: "Cookies",
     items: [
       { name: "Dark or White Chocolate Cookie", price: 100 },
-      { name: "Kinder Bueno Cookie", price: 130 },
+      { name: "Kinder Bueno Cookie", price: 125 },
       // { name: "Brownie Cookie", price: 110 },
-      { name: "Lotus Cookie", price: 130 },
-      { name: "Pistachio Cookie", price: 130 },
+      { name: "Lotus Cookie", price: 125 },
+      { name: "Pistachio Cookie", price: 125 },
     ],
   },
 
