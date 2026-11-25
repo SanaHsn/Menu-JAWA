@@ -45,6 +45,44 @@ body {
   background: linear-gradient(transparent, #241710);
   pointer-events: none;
 }
+/* Payment */
+.payment {
+  background: #35241d;
+  color: #f3e9da;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.payment summary {
+  padding: 18px;
+  cursor: pointer;
+}
+
+.wallet-content {
+  background: #fff9f0;
+  color: #35241d;
+  padding: 20px;
+}
+
+#wallet-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.wallet-content button {
+  background: #35241d;
+  color: #f3e9da;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.wallet-content h3 {
+  color: #ff7900;
+}
 .content {
   padding: 0 22px 34px;
   position: relative;

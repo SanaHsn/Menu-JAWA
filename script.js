@@ -7,3 +7,20 @@ document.querySelectorAll('[data-pending]').forEach(link => {
     }
   });
 });
+
+// Fonction pour copier le numéro de portefeuille dans le presse-papiers
+  async function copyWallet() {
+    const number = document
+      .getElementById("wallet-number")
+      .textContent.trim();
+
+    const message = document
+      .getElementById("payment-message");
+
+    try {
+      await navigator.clipboard.writeText(number);
+      message.textContent = "Number copied!";
+    } catch {
+      message.textContent = "Please copy the number manually.";
+    }
+  }
